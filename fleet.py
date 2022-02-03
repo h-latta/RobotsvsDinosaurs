@@ -5,7 +5,7 @@ robot_two = Robot('Lucy')
 robot_three = Robot('Jim')
 
 class Fleet:
-
+    robot = Robot('')
     robot_one = Robot('Ike')
     robot_two = Robot('Lucy')
     robot_three = Robot('Jim')

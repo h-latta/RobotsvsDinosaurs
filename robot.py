@@ -1,6 +1,6 @@
 from weapon import Weapon
 
-sword = Weapon('Sword', 10)
+sword = Weapon('Sword', 15)
 
 class Robot:
     def __init__(self, name):
