@@ -5,6 +5,11 @@ dino_two = Dinosaur('Rex', 15)
 dino_three = Dinosaur('Spike', 10)
 
 class Herd:
+
+    dino_one = Dinosaur('Grog', 20)
+    dino_two = Dinosaur('Rex', 15)
+    dino_three = Dinosaur('Spike', 10)
+    
     def __init__(self):
         self.group = []
 
