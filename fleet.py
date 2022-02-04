@@ -1,21 +1,15 @@
 from robot import Robot
 
-robot_one = Robot('Ike')
-robot_two = Robot('Lucy')
-robot_three = Robot('Jim')
-
 class Fleet:
-    robot = Robot('')
-    robot_one = Robot('Ike')
-    robot_two = Robot('Lucy')
-    robot_three = Robot('Jim')
 
     def __init__(self):
         self.army = []
-        robot_one
-        robot_two
-        robot_three
+        self.create_fleet()
 
     def create_fleet(self):
-        robo_list = [robot_one.name, robot_two.name, robot_three.name]
-        self.army = robo_list
+        robot_one = Robot('Ike')
+        robot_two = Robot('Lucy')
+        robot_three = Robot('Jim')
+        self.army.append(robot_one)
+        self.army.append(robot_two)
+        self.army.append(robot_three)
