@@ -56,11 +56,11 @@ class Battlefield:
     def display_winners(self):
         finish_game = False
         while finish_game == False:
-            if self.herd.group[0].health == 0 and self.herd.group[1].health == 0 and self.herd.group[2].health == 0:
+            if self.herd.group[0].health <= 0 and self.herd.group[1].health <= 0 and self.herd.group[2].health <= 0:
                 finish_game == True
                 print("Well done! You defeated the dinosaurs!")
                 break
-            elif self.fleet.army[0].health == 0 and self.fleet.army[1].health == 0 and self.fleet.army[2].health == 0:
+            elif self.fleet.army[0].health <= 0 and self.fleet.army[1].health <= 0 and self.fleet.army[2].health <= 0:
                 finish_game == True
                 print("The dinosaurs were too strong! We'll get them next time.")
                 break
