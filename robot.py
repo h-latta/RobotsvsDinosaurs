@@ -1,6 +1,6 @@
 from weapon import Weapon
 
-sword = Weapon('Sword', 15)
+sword = Weapon('Sword', 25)
 
 class Robot:
     def __init__(self, name):
@@ -10,6 +10,5 @@ class Robot:
 
     def attack(self, dinosaur):
         if dinosaur.health >= 0:
-            dinosaur.health = dinosaur.health - self.weapon.attack_power
-            print(f'{self.name} swiped {dinosaur.name} for {self.weapon.attack_power} damage!')
-            print(f'{dinosaur.name} is down to {dinosaur.health}HP.')
+            dinosaur.health = dinosaur.health - (self.weapon.attack_power)
+            print(f'{self.name} slashed {dinosaur.name} for {self.weapon.attack_power} damage!')
