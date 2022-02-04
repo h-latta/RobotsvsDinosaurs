@@ -7,6 +7,8 @@ class Dinosaur:
         self.health = 50
 
     def attack(self, robot):
-        if robot.health >= 0:
+        if robot.health > 0:
             robot.health = robot.health - self.attack_power
             print(f'{self.name} swiped {robot.name} for {self.attack_power} damage!')
+        else:
+            pass

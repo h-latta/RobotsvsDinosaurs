@@ -9,6 +9,8 @@ class Robot:
         self.weapon = sword
 
     def attack(self, dinosaur):
-        if dinosaur.health >= 0:
+        if dinosaur.health > 0:
             dinosaur.health = dinosaur.health - (self.weapon.attack_power)
             print(f'{self.name} slashed {dinosaur.name} for {self.weapon.attack_power} damage!')
+        else:
+            pass
