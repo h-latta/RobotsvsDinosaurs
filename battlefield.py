@@ -3,7 +3,6 @@ from dinosaur import Dinosaur
 from fleet import Fleet
 from herd import Herd
 import random
-
 from robot import Robot
 
 
